@@ -1,0 +1,16 @@
+/*Universal Styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+/*Header Section*/
+
+header {
+    height: 64px;
+    position: static;
+}
