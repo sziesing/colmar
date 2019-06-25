@@ -2,9 +2,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-html {
     margin: 0;
 }
 
@@ -12,5 +9,79 @@ html {
 
 header {
     height: 64px;
-    position: static;
+    position: fixed;
+    background: white;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+}
+
+header .image-container {
+    display: inline-block;
+    float: left;
+    padding-left: 24px;
+    padding: 12px;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    line-height: 60px;
+}
+
+#academy {
+    color: gray;
+}
+
+header ul {
+    display: inline-block;
+    float: right;
+    padding-right: 24px;
+}
+
+header li {
+    display: inline-block;
+    padding: 20px 8px;
+}
+
+/*Main Section Account for Header*/
+
+.main-section {
+    position: relative;
+    top: 64px;
+    width: 100%;
+}
+
+/*Learn Something Section*/
+
+.learn-something {
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.learn-something .image-container {
+    width: 60%;
+}
+
+.learn-something img {
+    width: 100%;
+    padding: 32px 0;
+}
+
+.learn-something .content-container {
+    width: 30%;
+}
+
+.learn-something h4 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+.learn-something h2, .learn-something h3, .learn-something h4 {
+    margin: 24px 0;
 }
