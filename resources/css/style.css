@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Helvetica;
+    color: black;
 }
 
 img {
@@ -11,6 +13,10 @@ img {
 
 p {
     width: 100%;
+}
+
+h2, h3, h4 {
+    color: rgb(9, 0, 140);
 }
 
 /*Header Section*/
@@ -35,10 +41,14 @@ header h1 {
     display: inline-block;
     float: left;
     line-height: 60px;
+    color:rgb(9, 0, 140);
+    font-family: Merriweather, serif;
 }
 
 #academy {
-    color: gray;
+    font-weight: lighter;
+    color: rgb(9, 0, 140);
+    font-family: Merriweather, serif;
 }
 
 header ul {
@@ -49,7 +59,18 @@ header ul {
 
 header li {
     display: inline-block;
-    padding: 20px 8px;
+    padding: 10px 8px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+header li:hover {
+    background-color: rgb(9, 0, 140);
+    color: white;
 }
 
 /*Main Section Account for Header*/
@@ -64,7 +85,7 @@ header li {
 
 .learn-something {
     width: 100%;
-    background-color: lightgray;
+    background-color:rgb(9, 0, 140);
 }
 
 .learn-something .image-container {
@@ -90,12 +111,27 @@ header li {
     width: 75%;
 }
 
+.learn-something h2, .learn-something h3 {
+    color:rgb(169, 189, 214);
+}
+
+.learn-something h2 {
+    font-size: 2.5em;
+}
+
 .learn-something h4 {
     background-color: black;
     color: white;
     text-align: center;
     padding: 8px;
     width: 75%;
+    border-radius: 20px;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.learn-something h4:hover {
+    background-color: white;
+    color: rgb(9, 0, 140);
 }
 
 .learn-something h2, .learn-something h3, .learn-something h4 {
@@ -108,23 +144,24 @@ header li {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    background-color: rgb(169, 189, 214);
 }
 
 .practicing h2 {
     margin-bottom: 24px;
+    clear: both;
 }
 
-.practicing .left p {
+.practicing .left p, .thesis-exhibit .left p{
     margin-bottom: 32px;
 }
 
 .practicing .left {
     width: 60%;
     padding: 0 24px;
-    display: inline-block;
 }
 
-.practicing .horizontal-block .image-container {
+.horizontal-block .image-container {
     width: 30%;
     display: inline-block;
 }
@@ -132,14 +169,14 @@ header li {
 .practicing .left img {
     padding: 32px 0;
 }
-.practicing .horizontal-block .content-container {
+.horizontal-block .content-container {
     width: 60%;
     display: inline-block;
     position: relative;
     bottom: 40px;
 }
 
-.practicing .right {
+.practicing .right, .thesis-exhibit .right {
     display: flex;
     width: 40%;
     flex-direction: column;
@@ -150,22 +187,23 @@ header li {
     width: 100%;
 }
 
-.practicing .right img {
+.practicing .right img, .thesis-exhibit .right img {
     padding: 16px;
 }
 
-.practicing .right p {
+.practicing .right p, .thesis-exhibit .right p {
     padding: 4px 0;
 }
 
-.practicing .right h3 {
+.practicing .right h3, .thesis-exhibit .right h3{
     padding-bottom: 4px;
 }
 
 /*Start Learning Section*/
 
 .start-learning {
-    background-color: lightgray;
+    background-color: rgb(9, 0, 140);
+    
 }
 
 .start-learning h2 {
@@ -193,4 +231,41 @@ header li {
 
 .block-container p {
     padding-top: 8px;
+}
+
+/*Thesis Exhibit Section */
+
+.thesis-exhibit {
+    background-color: rgb(169, 189, 214);
+}
+
+.thesis-exhibit .flexbox{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.thesis-exhibit h2 {
+    width: 100%;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.thesis-exhibit .left {
+    width: 60%;
+    padding: 0 24px;
+}
+
+.thesis-exhibit video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-exhibit .block-container img {
+    width: 35%;
+}
+
+.thesis-exhibit h4 {
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
